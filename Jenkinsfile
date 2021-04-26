@@ -1,7 +1,7 @@
 pieline {
   aget any
   stages {
-    stage('git erpo & clean') {
+    stage('git build & test') {
       steps {
         bat "git clone https://github.com/tenasik/Pipeline-maven/edit/master/Kisanet/G/Jenkinsfile'
   }
@@ -16,11 +16,6 @@ pieline {
       bat " Test the project"
       }
          }
-      stage ('Build'){
-    steps {
-      bat " Build the project"
-      }
-         
-         }
+     
   }
 }
